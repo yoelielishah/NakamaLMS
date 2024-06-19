@@ -89,13 +89,13 @@ COURSES = [
 #html route
 @app.route('/')
 def hello_world():
-  return render_template('home.html',  
+  return render_template('lmshomepage.html',  
                          course = COURSES )
 
 #html route
 @app.route('/contactus.html')
 def contactus():
-  return render_template('contactus.html')
+  return render_template('lmscontactus.html')
 
 #api route
 @app.route('/api/courses')
